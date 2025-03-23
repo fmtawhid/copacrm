@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Copa CRM</title>
+    <link rel="icon" href="image/fav.png" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Copa CRM",
+        "url": "https://copacrm.com/",
+        "description": "Copa CRM is a powerful customer relationship management tool designed to streamline business processes and enhance customer engagement. Explore our CRM solutions to boost productivity and drive growth.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Copa CRM",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/image/logo.png"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+8801750014052",
+            "contactType": "Customer Support",
+            "areaServed": "Global",
+            "availableLanguage": "English"
+          }
+        },
+        "mainEntityOfPage": "https://copacrm.com/"
+      }
+    </script>
+
+    <!-- Faq Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I get started?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ready to streamline your business management? Simply purchase Copa CRM, submit your free installation request, and our team will complete the setup within 24 hours."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a monthly fee for using Copa CRM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, Copa CRM is a one-time payment software. You pay once and get lifetime access, including free updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I receive updates for the application?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you will receive lifetime updates that include bug fixes, security patches, and new features."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which payment processors (Gateways) can I use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copa CRM supports Stripe, PayPal, Paystack, Razorpay, Tap, Mollie, and Offline (Bank Transfer) payments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which programming language is used?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copa CRM is developed using PHP (Laravel), JavaScript, MySQL, HTML, and CSS."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Product Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Copa CRM",
+        "operatingSystem": "Web",
+        "applicationCategory": "BusinessApplication",
+        "description": "Copa CRM is a powerful SaaS-based customer relationship management tool designed to streamline business processes, automate workflows, and enhance customer engagement.",
+        "url": "https://copacrm.com/",
+        "screenshot": "https://copacrm.com/image/sec1.webp",
+        "softwareVersion": "v1.0",
+        "creator": {
+          "@type": "Organization",
+          "name": "Copa CRM"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Copa CRM",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://copacrm.com/image/logo.png"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "35"
+        }
+      }
+      </script>
+      
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo.png" alt="Logo" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" id="toggleButton">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#feature">Feature</a></li>
+            <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">Faq</a></li>
+            <li class="nav-item"><a class="nav-link" href="#screen">Screen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="mobile-menu">
+      <button class="close-btn" id="closeBtn">X</button>
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#feature">Feature</a></li>
+        <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">Faq</a></li>
+        <li class="nav-item"><a class="nav-link" href="#screen">Screen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      // Toggle mobile menu visibility
+      document
+        .getElementById("toggleButton")
+        .addEventListener("click", function () {
+          let mobileMenu = document.getElementById("mobileMenu");
+          if (mobileMenu.style.transform === "translateX(0)") {
+            mobileMenu.style.transform = "translateX(-100%)";
+          } else {
+            mobileMenu.style.transform = "translateX(0)";
+          }
+        });
+
+      // Close mobile menu when close button is clicked
+      document
+        .getElementById("closeBtn")
+        .addEventListener("click", function () {
+          let mobileMenu = document.getElementById("mobileMenu");
+          mobileMenu.style.transform = "translateX(-100%)";
+        });
+
+      // Close dropdown if clicked outside
+      window.addEventListener("click", function (e) {
+        if (!e.target.closest(".dropdown")) {
+          document.getElementById("dropdownMenu").style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <!-- <div class="hero-overlay"></div> -->
+      <div class="hero-content">
+        <h1>Copa CRM</h1>
+        <hr class="hero-line" />
+        <p class="w-75 m-auto">
+          Copa CRM is a powerful all-in-one platform for project management,
+          invoicing, and customer relations—designed to boost productivity and
+          streamline your business operations.
+        </p>
+      </div>
+
+      <div class="container" style="padding: 15px; text-align: center">
+        <div class="row">
+          <!-- First column -->
+          <div
+            class="col-3 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="0"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon"><i class="fas fa-laptop"></i></div>
+              <div class="text-start">
+                <h4>Dashboard</h4>
+                <p>View overall status and project summary.</p>
+              </div>
+            </div>
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="1"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon">
+                <i class="fas fa-laptop"></i>
+                <!-- Font Awesome Icon -->
+              </div>
+              <div class="text-start">
+                <h4>Reports</h4>
+                <p>Generate useful reports in a few seconds.</p>
+              </div>
+            </div>
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="2"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon">
+                <i class="fas fa-laptop"></i>
+                <!-- Font Awesome Icon -->
+              </div>
+              <div class="text-start">
+                <h4>Proposals</h4>
+                <p>Build and send client proposals with ease.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Column (Text) -->
+          <div class="col-6 d-flex align-items-center justify-content-center">
+            <div>
+              <div class="laph-frame">
+                <div class="slider">
+                  <img src="image/dashboard.png" class="d-block w-100" alt="..." />
+                  <img src="image/report.png" class="d-block w-100" alt="..." />
+                  <img src="image/proposal.png" class="d-block w-100" alt="..." />
+                  <img src="image/leads.png" class="d-block w-100" alt="..." />
+                  <img src="image/team.png" class="d-block w-100" alt="..." />
+                  <img src="image/task.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -25px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                " class="lm1"
+              ></div>
+              <script>
+                $(document).ready(function () {
+                  var slider = $(".slider");
+
+                  // Initialize Slick Slider
+                  slider.slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    speed: 500,
+                    draggable: true,
+                    autoplay: true,
+                    autoplaySpeed: 200000,
+                    prevArrow:
+                      '<button type="button" class="slick-prev">Prev</button>',
+                    nextArrow:
+                      '<button type="button" class="slick-next">Next</button>',
+                  });
+
+                  // Custom Button Navigation
+                  $(".slider-btn").click(function () {
+                    var slideIndex = $(this).data("slide");
+                    slider.slick("slickGoTo", slideIndex);
+                  });
+                });
+              </script>
+            </div>
+          </div>
+
+          <!-- Third column -->
+          <div
+            class="col-3 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="3"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon">
+                <i class="fas fa-laptop"></i>
+                <!-- Font Awesome Icon -->
+              </div>
+              <div class="text-start">
+                <h4>Lead Management</h4>
+                <p>Assign and follow tasks with full visibility.</p>
+              </div>
+            </div>
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="4"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon">
+                <i class="fas fa-laptop"></i>
+                <!-- Font Awesome Icon -->
+              </div>
+              <div class="text-start">
+                <h4>Team Members</h4>
+                <p>Add and manage members with defined roles.</p>
+              </div>
+            </div>
+            <div
+              class="d-flex mt-5 slider-btn"
+              data-slide="5"
+              style="gap: 10px"
+            >
+              <div class="custom-hero-icon">
+                <i class="fas fa-laptop"></i>
+                <!-- Font Awesome Icon -->
+              </div>
+              <div class="text-start">
+                <h4>Task Management</h4>
+                <p>Assign and follow tasks with full visibility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="Section2" id="feature">
+      <div class="container">
+        <div class="container my-5">
+          <h2 class="text-center mb-4">
+            Features to help you to increase your productivity
+          </h2>
+          <hr
+            class="linehr"
+            style="
+              color: #009fe3;
+              height: 3px;
+              width: 500px;
+              margin: auto;
+              background: #009fe3;
+              opacity: 1;
+              margin-bottom: 60px;
+            "
+          />
+          <div class="row g-4">
+            <!-- Feature Items -->
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h4 class="mt-3">Time Tracking</h4>
+                <p>
+                  Keep track of the amount of time that you spend on your
+                  project tasks.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <h4 class="mt-3">Project Management</h4>
+                <p>
+                  Deliver your projects on time. Collaborate with your team
+                  clients.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-tasks"></i>
+                </div>
+                <h4 class="mt-3">Assign Tasks</h4>
+                <p>
+                  Assign tasks to team members, prioritize tasks, and set
+                  deadlines.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-file-invoice"></i>
+                </div>
+                <h4 class="mt-3">Invoices</h4>
+                <p>
+                  Get paid for time worked, expenses incurred, and custom
+                  products.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <h4 class="mt-3">Payments</h4>
+                <p>
+                  Frictionless payment processing including Stripe & PayPal.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <h4 class="mt-3">Estimates</h4>
+                <p>
+                  Provide cost estimates upfront to increase client commitment.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <h4 class="mt-3">Leads & Opportunities</h4>
+                <p>
+                  Keep track of your opportunities and nurture leads into
+                  customers.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h4 class="mt-3">Team Work</h4>
+                <p>Work alone or as a team with comprehensive user roles.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-user"></i>
+                </div>
+                <h4 class="mt-3">Client Dashboard</h4>
+                <p>Give customers access to a user-friendly dashboard.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <h4 class="mt-3">Help Desk</h4>
+                <p>Improve customer satisfaction with a support system.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4 class="mt-3">Knowledgebase</h4>
+                <p>Offer customers access to a self-service help repository.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <h4 class="mt-3">Communicate</h4>
+                <p>
+                  Connect with customers via an easy-to-use commenting system.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-file-signature"></i>
+                </div>
+                <h4 class="mt-3">Proposals</h4>
+                <p>
+                  Impress clients with beautifully crafted project proposals.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h4 class="mt-3">Workflow Automation</h4>
+                <p>
+                  Automations improve productivity and prevent workflow issues.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 text-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="custom-hero-icon1">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <h4 class="mt-3">Dependency Management</h4>
+                <p>Ensure tasks are completed in a prescribed sequence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Section3" id="product">
+      <div class="container">
+        <div class="row">
+          <!-- First Item -->
+          <div
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="text-left">
+              <h2>Beautifully Crafted & Feature Rich.</h2>
+              <hr
+                style="
+                  color: #009fe3;
+                  height: 3px;
+                  width: 250px;
+                  background: #009fe3;
+                  opacity: 1;
+                  margin-bottom: 15px;
+                "
+              />
+              <p style="margin-bottom: 30px">
+                Your team and your clients will love it.<br />
+                Right from the start, our goal was to create an application that
+                would be both full of features and a joy to use. Every feature
+                has been carefully designed to be easy to use.
+              </p>
+              <a href="#" class="btn-copa mt-3">COPA CRM </a>
+            </div>
+          </div>
+
+          <!-- Second Item -->
+          <div
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+              style="gap: 10px"
+            >
+              <div class="text-center">
+                <div class="image-container">
+                  <img src="image/m3.png" class="rotate-image" alt="Image 1" />
+                  <img src="image/m2.png" class="rotate-image" alt="Image 2" />
+                  <img src="image/m1.png" class="rotate-image" alt="Image 3" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Section4" id="faq">
+      <div class="container">
+        <h2 class="text-center" style="color: black;">Why Copa CRM ?</h2>
+        <hr
+          class="linehr"
+          style="
+            color: #009fe3;
+            height: 3px;
+            width: 500px;
+            margin: auto;
+            background: #009fe3;
+            opacity: 1;
+            margin-bottom: 60px;
+          "
+        />
+        <div class="row">
+          <!-- First Item -->
+
+          <div
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <!-- <img src="image/sec1.webp" class="faq_img" width="500px" alt="" srcset="" /> -->
+            <img src="image/dashboard.png" class="faq_img" width="500" alt="" />
+
+          </div>
+          <!-- Second Item -->
+          <div class="col-6">
+            <div class="accordion" id="faqAccordion">
+              <!-- Question 1 -->
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header text-center" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How do I get started?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Ready to streamline your business management? Get started in
+                    minutes with these simple steps:
+                    <ul>
+                      <li>
+                        <strong>Purchase COPA CRM:</strong> Complete your
+                        checkout here.
+                      </li>
+                      <li>
+                        <strong>Submit your free installation request:</strong>
+                        Fill out our simple form with your server details.
+                      </li>
+                      <li>
+                        <strong>Relax and focus on your business:</strong> We’ll
+                        handle the technical setup within 24 hours!
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header text-center" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Is there a monthly fee for using COPA CRM?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    COPA CRM uses a one-time payment model, so you never have to
+                    worry about recurring fees. Pay once and get lifetime
+                    access.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 6 -->
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header text-center" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Will I receive updates for the application?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes! You get lifetime updates, including bug fixes, security
+                    patches, and new features.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 7 -->
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header text-center" id="headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    Which payment processors (Gateways) can I use?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSeven"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Supported payment gateways include:
+                    <strong
+                      >Stripe, PayPal, Paystack, Razorpay, Tap, Mollie, Offline
+                      (Bank)</strong
+                    >.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 8 -->
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header text-center" id="headingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEight"
+                    aria-expanded="false"
+                    aria-controls="collapseEight"
+                  >
+                    Which programming language is used?
+                  </button>
+                </h2>
+                <div
+                  id="collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingEight"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    COPA CRM is built using
+                    <strong>PHP, Laravel, JavaScript, MySQL, HTML & CSS</strong
+                    >.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section6" id="screen" style="overflow: hidden;">
+      <div class="container">
+        <h2 class="text-center text-white">SCREEN DISPLAYS</h2>
+        <hr
+          style="
+            color: #009fe3;
+            height: 3px;
+            width: 500px;
+            margin: auto;
+            background: #009fe3;
+            opacity: 1;
+            margin-bottom: 60px;
+          "
+          class="linehr"
+        />
+        <div class="carousel">
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/dashboard.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/report.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -20px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/proposal.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/leads.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/task.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/contact.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+          <div class="lap-frame">
+            <div class="sm">
+              <img
+                src="image/customer.png"
+                class="d-block w-100"
+                style="border: 10px solid black"
+                alt="..."
+              />
+              <div
+                style="
+                  width: 110%;
+                  height: 1em;
+                  margin-left: -18px;
+                  bottom: 0;
+                  background: #bdbdbd;
+                  border-radius: 1em / 1.2em;
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .carousel {
+        width: 100%;
+      }
+      .lap-frame {
+        width: 370px !important;
+        margin-left: 27px !important;
+        padding: 0px 10px !important;
+      }
+
+      .slick-prev,
+      .slick-next {
+        /* background-color: black; */
+        color: white;
+        /* font-size: 20px; */
+        border-radius: 50%;
+        padding: 10px;
+        z-index: 10;
+      }
+
+      .slick-prev {
+        left: -50px;
+      }
+
+      .slick-next {
+        right: -50px;
+      }
+
+      .slick-prev:hover,
+      .slick-next:hover {
+        background-color: #333;
+      }
+
+      .slick-slide {
+        padding: 0 0px; /* স্লাইডের মধ্যে ফাঁকা জায়গা */
+      }
+
+      .slick-track {
+        display: flex;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".carousel").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          speed: 500,
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 2000000,
+          prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+          nextArrow: '<button type="button" class="slick-next">Next</button>',
+          responsive: [
+            {
+              breakpoint: 768, // মোবাইল ভিউ এর জন্য
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <div class="section7 py-5 bg-light" id="newsletter">
+      <div class="container">
+        <h2 class="text-center">Our Newsletter</h2>
+        <hr
+          style="
+            color: #009fe3;
+            height: 3px;
+            width: 500px;
+            margin: auto;
+            background: #009fe3;
+            opacity: 1;
+            margin-bottom: 60px;
+          "
+          class="linehr"
+        />
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="CRM Solution"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Customer Relationship</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  Our CRM solution helps businesses manage customer interactions
+                  and data effectively. By streamlining communication, tracking
+                  leads, and automating processes, it ensures increased sales .
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="CRM Analytics"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">CRM Analytics</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  Our CRM Analytics tools provide actionable insights into your
+                  customer data. With powerful reporting features, you can track
+                  performance, identify trends, and make data-driven decisions
+                  to improve business.
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card shadow-sm border-0 rounded-3">
+              <img
+                src="image/sec71.webp"
+                alt="Automation Integration"
+                class="card-img-top rounded-3"
+              />
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Automation & Integration</h3>
+                <hr
+                  style="
+                    color: #009fe3;
+                    height: 3px;
+                    width: 60px;
+                    margin: auto;
+                    background: #009fe3;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                  "
+                />
+                <p class="card-text text-muted mb-4">
+                  Our platform integrates seamlessly with various tools and
+                  automates manual tasks. This saves time, reduces errors, and
+                  enhances operational efficiency, allowing your team to focus
+                  on more strategic initiatives.
+                </p>
+                <a href="#" class="sec7btn">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="sec8" class="d-flex justify-content-center" id="contact">
+      <div class="sec8-content text-center">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead mb-5">
+          Get in touch with us today! We are here to assist with any questions
+          or support you need.
+        </p>
+        <a href="#explore" class="btn-copa pt-3 text-white">Contact US</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <!-- Copyright -->
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Rafusoft. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and necessary JS for navbar toggle -->
+
+    <!-- এই লাইনগুলো রিমুভ করুন -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- শুধু এই স্ক্রিপ্টটি রাখুন -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
