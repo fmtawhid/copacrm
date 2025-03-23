@@ -494,7 +494,7 @@ body {
   cursor: grab;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .accordion-button {
     font-size: 0.9em;
     padding: 8px;
@@ -531,7 +531,7 @@ body {
     margin: -2px !important;
   } */
   .section6{
-    width: 412px !important;
+    width: auto !important;
   }
   .Section3{
     padding: 20px 10px !important;
