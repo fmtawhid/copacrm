@@ -496,14 +496,18 @@ body {
 .slider-btn{
   display: flex;
 }
-.section6{
+/* .section6{
   overflow: hidden;
-}
+} */
 
 @media (max-width: 800px) {
   .accordion-button {
     font-size: 0.9em;
     padding: 8px;
+  }
+  .slider-btn{
+    display: flex;
+    flex-direction: row !important;
   }
 
   .accordion-body {
@@ -546,7 +550,7 @@ body {
     font-size: 20px !important;
   }
   .hero-content p{
-    width: 335px !important;
+    width: 335px ;
   }
   .custom-hero-icon{
     height: 57px !important;
@@ -574,8 +578,8 @@ body {
     flex-direction: column;
   }
   .custom-hero-icon {
-    width: 110px !important;
-    height: 100px !important;
+    /* width: 110px; */
+    height: 100px;
   }
   
   .accordion-button {
@@ -623,7 +627,7 @@ body {
     font-size: 20px !important;
   }
   .hero-content p{
-    width: 715px !important;
+    width: 715px ;
   }
 
   .section7 .row{
