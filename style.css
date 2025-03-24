@@ -505,7 +505,7 @@ body {
   overflow: hidden;
 } */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .accordion-button {
     font-size: 0.9em;
     padding: 8px;
