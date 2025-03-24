@@ -504,6 +504,13 @@ body {
 /* .section6{
   overflow: hidden;
 } */
+/* সকল সেকশনের জন্য scroll-margin-top */
+#home, #feature, #product ,#faq, #newsletter {
+  scroll-margin-top: 85px;
+}
+#screen, #contact{
+  scroll-margin-top: 87px;
+}
 
 @media (max-width: 768px) {
   .accordion-button {
